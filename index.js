@@ -6,7 +6,7 @@ export default () => {
   const app = useApp();
   const physics = usePhysics();
 
-  const geometry = new THREE.PlaneGeometry( 1, 1 );
+  const geometry = new THREE.PlaneGeometry( 5, 5 );
   geometry.rotateY(Math.PI / 2); // note: match with physx' default plane rotation.
   const material = new THREE.MeshStandardMaterial( {color: 'gray'} );
   const physicsPlane = new THREE.Mesh( geometry, material );
